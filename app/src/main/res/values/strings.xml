@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ToDoListApp</string>
+    <string name="task">Task</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="seconds">SS:</string>
+    <string name="minutes">MM:</string>
+    <string name="hours">HH:</string>
+</resources>
