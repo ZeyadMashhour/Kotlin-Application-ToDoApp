@@ -15,16 +15,15 @@ open class BaseActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.insetsController?.hide(WindowInsets.Type.statusBars())
         }
+    }
 
-        data class Time(val hours: Int, val minutes: Int, val seconds: Int)
+    data class Time(val hours: Int, val minutes: Int, val seconds: Int)
 
-        fun secondsToTime(secondsInput: Int): Time {
-            val hours = secondsInput / 3600
-            val minutes = (secondsInput % 3600) / 60
-            val seconds = secondsInput % 60
+    fun secondsToTime(secondsInput: Int): Time {
+        val hours = secondsInput / 3600
+        val minutes = (secondsInput % 3600) / 60
+        val seconds = secondsInput % 60
 
-            return Time(hours, minutes, seconds)
-        }
-
+        return Time(hours, minutes, seconds)
     }
 }

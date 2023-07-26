@@ -26,12 +26,10 @@ class AddToDoActivity : BaseActivity(), View.OnClickListener {
         }
 
         if(mToDoDetails != null){
-            supportActionBar?.title = "Edit Happy Place"
+            supportActionBar?.title = "Edit todo"
 
             et_title.setText(mToDoDetails!!.task)
             et_description.setText(mToDoDetails!!.description)
-
-
             btn_save.text = "UPDATE"
         }
         btn_save.setOnClickListener(this)
